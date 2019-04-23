@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="nav wrap">
+    <div class="nav_left"><a href="#">南航图片logo</a></div>
+    <div class="nav_right">
+        <ul>
+            <li><a href="#">
+                <div class="p1"></div>
+                南航无障碍网站</a></li>
+            <li>客户服务热线：95539</li>
+            <li>|</li>
+            <li><a href="#">
+                <div class="p2"></div>
+                用户反馈</a></li>
+            <li>|</li>
+            <li><a href="#">
+                <div class="p3"></div>
+                在线购票</a></li>
+            <li>|</li>
+            <li><a href="#">切换旧版</a></li>
+            <li>|</li>
+            <li id="more_language">
+                <div class="p4"></div>
+                <span>China</span>
+                <div class="p5"></div>
+                <div class="zhezhao" id="zhezhao"></div>
+                <div class="language" id="language">
+                    <form action="#">
+                        <div class="form1">
+                            <h3 class="h3_left">Change Country/Region</h3>
+                            <ul class="u1">
+                                <li><a href="javascript:;">Canada</a></li>
+                                <li><a href="javascript:;">China</a></li>
+                                <li><a href="javascript:;">France</a></li>
+                                <li><a href="javascript:;">Germany</a></li>
+                                <li><a href="javascript:;">Hong Kong,China</a></li>
+                                <li><a href="javascript:;">India</a></li>
+                                <li><a href="javascript:;">Japan</a></li>
+                                <li><a href="javascript:;">Malaysia</a></li>
+                                <li><a href="javascript:;">Taiwan,China</a></li>
+                                <li><a href="javascript:;">United States</a></li>
+                            </ul>
+                        </div>
+                        <div class="form2">
+                            <h3 class="h3_right">Change Language</h3>
+                            <ul class="u2">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">简体中文</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+        <div class="dv_right">
+            <span><a href="#">！购票安全提醒</a></span>
+            <input type="text" id="forIe8" placeholder="如何网上办理值机">
+            <a href="#">
+                <div class="circle">
+                    <div class="part"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</header>
+<nav id="nav">
+    <div class="center wrap">
+        <ul class="left">
+            <li><a href="#">首页</a></li>
+            <li class="li_1"><a href="#">预定行程</a>
+                <ul>
+                    <li><a href="#">机票预订</a></li>
+                    <li><a href="#">机票兑换</a></li>
+                    <li><a href="#">团队预定</a></li>
+                    <li><a href="#">旅游预订</a></li>
+                    <li><a href="#">企业商旅</a></li>
+                    <li><a href="#">PNR导入</a></li>
+                    <li><a href="#">机票预约</a></li>
+                    <li><a href="#">残疾军人购票</a></li>
+                    <li><a href="#">残疾人民警察购票</a></li>
+                    <li><a href="#">航班时刻表</a></li>
+                </ul>
+            </li>
+            <li><a href="#">服务大厅</a>
+                <div class="li_2">
+                    <div class="left">
+                        <h3>服务办理</h3>
+                        <ul>
+                            <li><a href="#">提前选座</a></li>
+                            <li><a href="#">价格保障申述</a></li>
+                            <li><a href="#">餐食预定</a></li>
+                            <li><a href="#">办理乘机手续</a></li>
+                            <li><a href="#">行程单邮寄</a></li>
+                            <li><a href="#">中转住宿</a></li>
+                            <li><a href="#">退改票</a></li>
+                            <li><a href="#">延误改退</a></li>
+                            <li><a href="#">额外行李购买</a></li>
+                            <li><a href="#">电子发票</a></li>
+                            <li><a href="#">延误申明</a></li>
+                            <li><a href="#">机上上网申请</a></li>
+                            <li></li>
+                            <li></li>
+                            <li><a href="#">保险理赔</a></li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <h3>自助查询</h3>
+                        <ul>
+                            <li><a href="#">航班动态</a></li>
+                            <li><a href="#">客票验证</a></li>
+                            <li><a href="#">遗失行李查询</a></li>
+                            <li><a href="#">遗失物品查询</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>特殊旅客服务</h3>
+                        <ul>
+                            <li><a href="#">婴儿摇篮</a></li>
+                            <li><a href="#">老人协助服务</a></li>
+                            <li><a href="#">行动障碍旅客</a></li>
+                            <li><a href="#">小动物托运</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">南航假期</a>
+                <ul class="li_3">
+                    <li><a href="#">旅游度假</a></li>
+                    <li><a href="#">酒店</a></li>
+                    <li><a href="#">用车</a></li>
+                    <li><a href="#">签证</a></li>
+                    <li><a href="#">目的地信息</a></li>
+                    <li><a href="#">免税品</a></li>
+                </ul>
+            </li>
+            <li><a href="#">明珠俱乐部</a>
+                <ul class="li_4">
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">里程积累</a></li>
+                    <li><a href="#">里程兑换</a></li>
+                    <li><a href="#">会员权益</a></li>
+                    <li><a href="#">促销信息</a></li>
+                    <li><a href="#">明珠商场</a></li>
+                </ul>
+            </li>
+            <li><a href="#">优惠信息</a>
+                <ul class="li_5">
+                    <li><a href="#">优惠机票</a></li>
+                    <li><a href="#">机票促销</a></li>
+                    <li><a href="#">精彩活动</a></li>
+                    <li><a href="#">英国体验馆</a></li>
+                    <li><a href="#">本周推荐</a></li>
+                </ul>
+            </li>
+            <li><a href="#">出行帮助</a>
+                <div class="li_6">
+                    <ul>
+                        <li><a href="#">机票预定</a></li>
+                        <li><a href="#">预订须知</a></li>
+                        <li><a href="#">支付须知</a></li>
+                        <li><a href="#">各地服务点</a></li>
+                        <li><a href="#">南航授权代理商</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">办理值机</a></li>
+                        <li><a href="#">网上值机</a></li>
+                        <li><a href="#">自助值机</a></li>
+                        <li><a href="#">移动值机</a></li>
+                        <li><a href="#">微信值机</a></li>
+                        <li><a href="#">短信值机</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">行李服务</a></li>
+                        <li><a href="#">托运行李</a></li>
+                        <li><a href="#">随身携带行李</a></li>
+                        <li><a href="#">行李运输限制</a></li>
+                        <li><a href="#">特殊行李</a></li>
+                        <li><a href="#">行李丢失/延误/损坏</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">机上服务</a></li>
+                        <li><a href="#">机舱布局</a></li>
+                        <li><a href="#">机上娱乐</a></li>
+                        <li><a href="#">机上餐食</a></li>
+                        <li><a href="#">B787梦想飞机</a></li>
+                        <li><a href="#">A380全新体验</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">办理乘机手续</a></li>
+                        <li><a href="#">航班信息</a></li>
+                        <li><a href="#">明珠俱乐部</a></li>
+                        <li><a href="#">网上预订服务</a></li>
+                        <li><a href="#">机场服务</a></li>
+                    </ul>
+                    <span><a href="#">更多>></a></span>
+                </div>
+            </li>
+        </ul>
+        <ul class="right">
+            <li><a href="#">登录</a></li>
+            <li>|</li>
+            <li><a href="#">注册</a></li>
+        </ul>
+    </div>
+</nav>
+<section>
+    <div class="left" id="arr_left"></div>
+    <div class="right" id="arr_right"></div>
+    <figure class="big_pic" id="big_pic">
+        <ul id="pic">
+            <li>
+                <img src="images/bigpic1.jpg" alt="">
+            </li>
+            <li><img src="images/bigpic2.jpg" alt=""></li>
+            <li><img src="images/bigpic3.jpg" alt=""></li>
+            <li><img src="images/bigpic4.jpg" alt=""></li>
+            <li><img src="images/bigpic5.jpg" alt=""></li>
+        </ul>
+        <ul id="btn">
+            <li>南航会员日</li>
+            <li>出发周边游</li>
+            <li>高端冬季礼遇</li>
+            <li>加州体验馆</li>
+            <li>新开航专区</li>
+        </ul>
+        <figure class="main">
+            <ul id="uu2">
+                <li class="one"><i></i>预定行程</li>
+                <li class="two"><i></i>形成服务</li>
+                <li class="three"><i></i>旅游度假</li>
+                <li class="four"><i></i>移动端</li>
+            </ul>
+            <div class="main_big" id="order">
+                <ul>
+                    <li class="one"><a href="#"><i></i>机票</a></li>
+                    <li class="two"><a href="#"><i></i>团队></a></li>
+                    <li class="three"><a href="#"><i></i>机票预约></a></li>
+                </ul>
+                <form action="#">
+                    <div class="one" id="one">
+                        <div id="one_logo" class="one_logo"></div>
+                        单程
+                    </div>
+                    <div class="two" id="two">
+                        <div id="two_logo" class="two_logo"></div>
+                        往返
+                    </div>
+                    <div class="three"><a href="#">常用航线<i></i></a></div>
+                    <span><a href="#">多程>></a></span>
+                </form>
+                <div class="city">
+                    <span class="one">出发城市</span>
+                    <div class="one"><i class="one"></i><input id="departure" type="text" placeholder="全拼/简拼/汉字"><i class="two"></i></div>
+                    <a href="javascript:void(0);" id="exchange"></a>
+                    <span class="two">到达城市</span>
+                    <div class="two"><i class="one"></i><input id="reaching" type="text" placeholder="全拼/简拼/汉字"><i class="two"></i></div>
+                    <span class="three">出发日期</span>
+                    <div class="three"><i class="one"></i><input id="yymmdd" type="text" placeholder="2019-01-01"><i class="two"></i></div>
+                    <a href="#" class="two"></a>
+                    <span class="four">返回日期</span>
+                    <div class="four"><i class="one"></i><input type="text" disabled><i class="two"></i></div>
+                    <span class="five">成人(>12岁)</span>
+                    <span class="six">儿童(2-11岁)</span>
+                    <span class="seven">婴儿(<2岁)</span>
+                    <div class="adult">1
+                        <div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="child">2
+                        <div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="baby">3
+                        <div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="last"><i></i><a href="#">价格保障 买贵全赔</a></div>
+                    <a href="#" class="last">立即查询</a>
+                </div>
+            </div>
+            <div class="server" id="server" style="display: none">1</div>
+            <div class="vacation" id="vacation" style="display: none">2</div>
+            <div class="app" id="app" style="display: none">3</div>
+        </figure>
+    </figure>
+</section>
+<div class="discount">
+    <div class="head">
+        <i></i>
+        <h2>专享优惠</h2>
+        <ul>
+            <li>国内优惠机票</li>
+            <li>国际优惠机票</li>
+            <li>机票兑换</li>
+        </ul>
+    </div>
+    <div class="left">
+        <ul class="city" id="city_name">
+            <li id="gz">广州</li>
+            <li id="sz">深圳</li>
+            <li id="cq">重庆</li>
+            <li id="wlmq">乌鲁木齐</li>
+            <li id="more">更多<i></i></li>
+        </ul>
+        <div id="gz_1">
+            <ul class="city_price">
+                <li>
+                    <span class="kind1">广州</span>
+                    <div>
+                        <i></i>
+                        <div></div>
+                    </div>
+                    <span class="kind2">揭阳</span>
+                    <span class="kind3">2018-12-27</span>
+                    <h3>￥140起</h3>
+                </li>
+                <li>
+                    <span class="kind1">广州</span>
+                    <div>
+                        <i></i>
+                        <div></div>
+                    </div>
+                    <span class="kind2">北海</span>
+                    <span class="kind3">2019-01-05</span>
+                    <h3>￥150起</h3>
+                </li>
+                <li>
+                    <span class="kind1">广州</span>
+                    <div>
+                        <i></i>
+                        <div></div>
+                    </div>
+                    <span class="kind2">南宁</span>
+                    <span class="kind3">2018-01-02</span>
+                    <h3>￥170起</h3>
+                </li>
+                <li>
+                    <span class="kind1">广州</span>
+                    <div>
+                        <i></i>
+                        <div></div>
+                    </div>
+                    <span class="kind2">梅县</span>
+                    <span class="kind3">2018-12-21</span>
+                    <h3>￥190起</h3>
+                </li>
+                <li>
+                    <span class="kind1">广州</span>
+                    <div>
+                        <i></i>
+                        <div></div>
+                    </div>
+                    <span class="kind2">湛江</span>
+                    <span class="kind3">2018-12-20</span>
+                    <h3>￥220起</h3>
+                </li>
+                <li>
+                    <span class="kind1">广州</span>
+                    <div>
+                        <i></i>
+                        <div></div>
+                    </div>
+                    <span class="kind2">长沙</span>
+                    <span class="kind3">2019-01-07</span>
+                    <h3>￥220起</h3>
+                </li>
+                <li>
+                    <span class="kind1">广州</span>
+                    <div>
+                        <i></i>
+                        <div></div>
+                    </div>
+                    <span class="kind2">贵阳</span>
+                    <span class="kind3">2019-01-05</span>
+                    <h3>￥260起</h3>
+                </li>
+                <li>
+                    <span class="kind1">广州</span>
+                    <div>
+                        <i></i>
+                        <div></div>
+                    </div>
+                    <span class="kind2">井冈山</span>
+                    <span class="kind3">2018-12-25</span>
+                    <h3>￥290起</h3>
+                </li>
+                <li>
+                    <span class="kind1">广州</span>
+                    <div>
+                        <i></i>
+                        <div></div>
+                    </div>
+                    <span class="kind2">银川</span>
+                    <span class="kind3">2018-12-25</span>
+                    <h3>￥300起</h3>
+                </li>
+            </ul>
+            <i></i>
+            <h4>价格还不够低？戳我预约吧！</h4>
+            <i></i>
+            <a href="#">立即预约</a>
+        </div>
+        <div id="gz_2" style="display: none"></div>
+        <div id="gz_3" style="display: none"></div>
+        <div id="gz_4" style="display: none"></div>
+        <div id="gz_5" style="display: none"></div>
+    </div>
+    <!--视图-->
+    <div class="right">
+        <!--所有的图片-->
+        <div class="photos" id="photos">
+            <ul>
+                <li><img src="./images/czDay1.jpg" alt=""></li>
+                <li><img src="./images/czDay2.jpg" alt=""></li>
+                <li><img src="./images/czDay3.jpg" alt=""></li>
+                <li><img src="./images/czDay4.jpg" alt=""></li>
+                <li><img src="./images/czDay5.jpg" alt=""></li>
+                <li><img src="./images/czDay6.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div>
+    <figure class="hot">
+        <h2>
+            <i></i>
+            热门活动
+            <a href="#">更多活动></a>
+        </h2>
+        <ul>
+            <li>
+                <div class="zhezhao"></div>
+                <a href="#">
+                    <img src="images/hot1.jpg" alt="">
+                    <span>早餐优惠</span>
+                </a>
+            </li>
+            <li>
+                <div></div>
+                <a href="#">
+                    <img src="images/hot2.png" alt="">
+                    <span>本周推荐</span>
+                </a>
+            </li>
+            <li>
+                <div></div>
+                <a href="#">
+                    <img src="images/hot3.jpg" alt="">
+                    <span>天天有奖</span>
+                </a>
+            </li>
+            <li class="last">
+                <a href="#">
+                    <div></div>
+                    <img src="images/hot4.jpg" alt="">
+                    <span>购票送里</span>
+                </a>
+            </li>
+        </ul>
+    </figure>
+    <figure class="server">
+        <h2>
+            <i></i>
+            服务专区
+            <a>更多活动></a>
+        </h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="images/server1.png" alt="">
+                    <span class="one">价格保障</span>
+                    <span class="two">会员专享 买贵全赔</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/server2.jpg" alt="">
+                    <span class="one">提前选座</span>
+                    <span class="two">舒适空间，畅想旅行</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/server3.jpg" alt="">
+                    <span class="one">机上上网</span>
+                    <span class="two">WiFi随行 联系常在</span>
+                </a>
+            </li>
+            <li class="last">
+                <a href="#">
+                    <img src="images/server4.jpg" alt="">
+                    <span class="one">全渠道退改</span>
+                    <span class="two">便捷改期 急速退票</span>
+                </a>
+            </li>
+        </ul>
+    </figure>
+</div>
+<div class="city_impress">
+    <a href="#"><img src="./images/city_impression.jpg" alt=""></a>
+</div>
+<div class="bottom">
+    <ul>
+        <li>关于南航</li>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">招聘信息</a></li>
+        <li><a href="#">新闻资讯</a></li>
+        <li><a href="#">投资者关系</a></li>
+        <li><a href="#">南航集团</a></li>
+    </ul>
+    <ul>
+        <li>客户服务</li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">在线客服</a></li>
+        <li><a href="#">用户反馈</a></li>
+        <li><a href="#">常见问题</a></li>
+        <li><a href="#">行李服务</a></li>
+    </ul>
+    <ul>
+        <li>更多信息</li>
+        <li><a href="#">预订须知</a></li>
+        <li><a href="#">招标采购</a></li>
+        <li><a href="#">南航跨境购</a></li>
+        <li><a href="#">国内运输总条件</a></li>
+        <li><a href="#">国际运输总条件</a></li>
+    </ul>
+    <ul>
+        <li>关注与订阅</li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+</div>
+<footer>
+    <div class="adv" id="adv">
+        <a href="javascript:;" id="toTop">返回顶部</a>
+        <img src="images/colse.png" alt="" id="close">
+    </div>
+</footer>
+<script src="js/index.js"></script>
+<script src="js/picPlay.js"></script>
+
+</body>
+</html>
